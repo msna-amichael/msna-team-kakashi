@@ -12,5 +12,7 @@ module.exports = (app) => {
 	app.get('/api/todos/:todoId', todosController.retrieve);
 	app.put('/api/todos/:todoId', todosController.update);
 	app.delete('/api/todos/:todoId', todosController.destroy);
-
+	app.put('/api/todos/:todoId/items/:todoItemId', todoItemsController.update);
+	app.delete('/api/todos/:todoId/items/:todoItemId', todoItemsController.destroy
+	);
 };
